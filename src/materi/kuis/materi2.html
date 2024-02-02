@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../assets/style/kuis-materi2.css" />
+    <link rel="stylesheet" href="../../assets/style/navbar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Kuis Model Multimedia Interaktif</title>
+  </head>
+  <body class="h-100">
+    <nav
+      class="navbar-time navbar d-flex navbar-light bg-light border-bottom py-3"
+      id="header"
+    >
+      <div class="time me-4">
+        <span class="text-time fs-5">06m</span>
+        <span class="text-time fs-5">:</span>
+        <span class="text-time fs-5">50s</span>
+      </div>
+    </nav>
+
+    <main class="w-100 h-100">
+      <aside class="sidebar">
+        <h5 class="fs-5 fw-bold text-center mt-3 mb-4">
+          Soal Model Multimedia Interaktif
+        </h5>
+        <div class="container-nomor">
+          <span class="nomor fs-5">1</span>
+          <span class="nomor fs-5">2</span>
+          <span class="nomor fs-5">3</span>
+          <span class="nomor fs-5">4</span>
+          <span class="nomor fs-5">5</span>
+        </div>
+      </aside>
+      <section class="container-soal mt-5">
+        <span class="soal fs-5">Apa itu Front End Developer?</span>
+        <div class="container-pilgan mt-4">
+          <div class="ket-pilgan">
+            <span class="pilgan">A</span>
+            <p class="text-pilgan">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis eveniet animi, dicta voluptas, exercitationem, omnis
+              debitis tenetur sit atque non nostrum saepe vitae similique fugit
+              natus maxime quos rerum ullam.
+            </p>
+          </div>
+          <div class="ket-pilgan">
+            <span class="pilgan">B</span>
+            <p class="text-pilgan">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis eveniet animi, dicta voluptas, exercitationem, omnis
+              debitis tenetur sit atque non nostrum saepe vitae similique fugit
+              natus maxime quos rerum ullam.
+            </p>
+          </div>
+          <div class="ket-pilgan">
+            <span class="pilgan">C</span>
+            <p class="text-pilgan">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis eveniet animi, dicta voluptas, exercitationem, omnis
+              debitis tenetur sit atque non nostrum saepe vitae similique fugit
+              natus maxime quos rerum ullam.
+            </p>
+          </div>
+          <div class="ket-pilgan">
+            <span class="pilgan">D</span>
+            <p class="text-pilgan">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis eveniet animi, dicta voluptas, exercitationem, omnis
+              debitis tenetur sit atque non nostrum saepe vitae similique fugit
+              natus maxime quos rerum ullam.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="navbar d-flex align-items-center justify-content-sm-between navbar-light bg-light border-top py-3 w-75"
+          id="footer"
+        >
+          <div
+            class="back-materi-svg d-flex align-items-center"
+            onclick="window.location.href='materi2.html'"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" stroke="#E4E4E7"></circle>
+              <path
+                d="M14.7071 8.70718L11.4142 12.0001L14.7071 15.293L13.2929 16.7072L9.29289 12.7072C8.90237 12.3167 8.90237 11.6835 9.29289 11.293L13.2929 7.29297L14.7071 8.70718Z"
+                fill="#3F3F46"
+              ></path>
+            </svg>
+            <span
+              class="before-text ms-2 fs-6"
+              style="
+                color: #a1a1aa;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+              "
+              >Sebelumnya</span
+            >
+          </div>
+          <div class="next-materi-svg d-flex align-items-center">
+            <span
+              class="next-text ms-2 fs-6"
+              style="
+                color: #a1a1aa;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+              "
+              >Selanjutnya</span
+            >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" stroke="#E4E4E7"></circle>
+              <path
+                d="M9.29297 15.293L12.5859 12.0001L9.29297 8.70718L10.7072 7.29297L14.7072 11.293C15.0977 11.6835 15.0977 12.3167 14.7072 12.7072L10.7072 16.7072L9.29297 15.293Z"
+                fill="#3F3F46"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const nomorElements = document.querySelectorAll(".nomor");
+      const pilganElements = document.querySelectorAll(".pilgan");
+
+      nomorElements.forEach((element) => {
+        element.addEventListener("click", function () {
+          nomorElements.forEach((el) => {
+            el.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
+
+      pilganElements.forEach((element) => {
+        element.addEventListener("click", function () {
+          pilganElements.forEach((el) => {
+            el.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../assets/icon/multimedia-computer.png" />
+    <link rel="stylesheet" href="../../assets/style/navbar.css" />
+    <link rel="stylesheet" href="../../assets/style/materi2.css" />
+
+    <!-- Bootstrap CSS -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .next-materi-svg {
+        opacity: 0;
+        cursor: default !important;
+      }
+    </style>
+    <title>Pembelajaran Multimedia</title>
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <nav
+      class="navbar d-flex align-items-center justify-content-sm-between navbar-expand-lg navbar-light bg-light border-bottom py-3"
+      id="header"
+    >
+      <div
+        class="back-course-svg d-flex align-items-center"
+        onclick="window.location.href='../belajar.html'"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          class=""
+        >
+          <path
+            d="M4.35982 11L10.3598 6L11.6402 7.53644L7.76205 10.7682H20V12.7682H7.76205L11.6402 16L10.3598 17.5364L4.35982 12.5364C4.13182 12.3464 4 12.065 4 11.7682C4 11.4714 4.13182 11.19 4.35982 11Z"
+            fill="#71717A"
+          ></path>
+        </svg>
+        <span class="nav-text ms-2 fs-6 fw-bold"
+          >Model Multimedia Interaktif</span
+        >
+      </div>
+    </nav>
+
+    <h1 class="judul fw-bold text-center"></h1>
+    <article class="container-article d-flex justify-content-center w-100">
+      <section class="container-ppt">
+        <div class="container">
+          <h2 class="fs-3 fw-medium">Aturan</h2>
+          <div class="text-instruksi mt-4">
+            <p class="fs-5">
+              Kuis post-test berfungsi untuk menguji pengetahuan Anda tentang
+              materi yang telah dipelajari di sub-modul ini.
+            </p>
+            <p class="fs-5 mt-4">
+              Terdapat 10 pertanyaan yang harus dikerjakan dalam kuis post-test
+              ini. Beberapa ketentuan dari kuis ini adalah:
+            </p>
+            <ul>
+              <li class="fs-5">Syarat nilai kelulusan: 80%</li>
+              <li class="fs-5">Durasi kuis: 15 menit</li>
+            </ul>
+            <p class="fs-5 mt-4">
+              Apabila tidak memenuhi syarat kelulusan, maka Anda harus menunggu
+              selama 1 menit untuk mengulang pengerjaan kuis kembali.
+            </p>
+            <p class="fs-5 mt-4">Selamat Mengerjakan!</p>
+          </div>
+          <div class="btn-container mt-5 mb-5">
+            <button type="button" class="mulai btn btn-dark fw-bold px-4 py-2" onclick="showConfirmation()">
+              Mulai
+            </button>
+          </div>
+          <div class="riwayat">
+            <h2 class="fs-3 fw-medium mb-4">Riwayat</h2>
+            <table class="table-hover table-responsive--collapse">
+              <thead class="thead-riwayat text-gray-500">
+                <tr class="tr-top">
+                  <th class="text-riwayat fs-5">Tanggal</th>
+                  <th class="text-riwayat fs-5">Persentase</th>
+                  <th class="text-riwayat fs-5">Status</th>
+                  <th class="text-riwayat fs-5">Action</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-600">
+                <tr class="tr-bottom">
+                  <td data-th="Tanggal" class="hasil-riwayat">
+                    16 Nov 2023 13:45
+                  </td>
+                  <td data-th="Persentase" class="hasil-riwayat">80%</td>
+                  <td data-th="Status">
+                    <span
+                      class="status dcd-badge dcd-badge-sm dcd-badge-success"
+                      >Lulus</span
+                    >
+                  </td>
+                  <td data-th="Action" class="hasil-riwayat">
+                    <button class="dcd-btn dcd-btn-secondary px-3" id="detail">
+                      Lihat Detail
+                    </button>
+                  </td>
+                </tr>
+                <tr class="tr-bottom">
+                  <td data-th="Tanggal" class="hasil-riwayat">
+                    16 Nov 2023 13:45
+                  </td>
+                  <td data-th="Persentase" class="hasil-riwayat">80%</td>
+                  <td data-th="Status">
+                    <span
+                      class="status dcd-badge dcd-badge-sm dcd-badge-success"
+                      >Lulus</span
+                    >
+                  </td>
+                  <td data-th="Action" class="hasil-riwayat">
+                    <button class="dcd-btn dcd-btn-secondary px-3" id="detail">
+                      Lihat Detail
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <div class="full-100"></div>
+
+    <div class="container-confirm">
+      <div class="confirm">
+        <div
+          class="modal-body mt-3 text-center d-flex flex-column align-items-center justify-content-center"
+        >
+          <p>Apakah Anda yakin ingin mengambil ujian ini?</p>
+          <p>
+            Jika Anda mengambil ujian ini, maka Anda baru dapat mengambilnya
+            lagi
+            <b>1 menit</b> setelah ujian berakhir.
+          </p>
+        </div>
+        <div class="modal-footer w-100 d-flex justify-content-end">
+          <button
+            type="button"
+            class="btn btn-outline-secondary fw-bold px-4 py-2"
+            data-dismiss="modal"
+            onclick="closeConfirmation()"
+          >
+            Batal
+          </button>
+          <button
+            type="submit"
+            class="mulai btn text-light btn-outline-primary fw-bold px-4 py-2"
+          >
+            Lanjut
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="navbar d-flex align-items-center justify-content-sm-between navbar-expand-lg navbar-light bg-light border-top py-3"
+      id="footer"
+    >
+      <div
+        class="back-materi-svg d-flex align-items-center"
+        onclick="window.location.href='materi2.html'"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="12" cy="12" r="10" stroke="#E4E4E7"></circle>
+          <path
+            d="M14.7071 8.70718L11.4142 12.0001L14.7071 15.293L13.2929 16.7072L9.29289 12.7072C8.90237 12.3167 8.90237 11.6835 9.29289 11.293L13.2929 7.29297L14.7071 8.70718Z"
+            fill="#3F3F46"
+          ></path>
+        </svg>
+        <span
+          class="before-text ms-2 fs-6"
+          style="
+            color: #a1a1aa;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+          "
+          >Materi Model Multimedia Interaktif</span
+        >
+      </div>
+
+      <span class="active-materi">Post-Test: Model Multimedia Interaktif</span>
+
+      <div class="next-materi-svg d-flex align-items-center">
+        <span
+          class="next-text ms-2 fs-6"
+          style="
+            color: #a1a1aa;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+          "
+          >Materi Model Multimedia Interaktif</span
+        >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="12" cy="12" r="10" stroke="#E4E4E7"></circle>
+          <path
+            d="M9.29297 15.293L12.5859 12.0001L9.29297 8.70718L10.7072 7.29297L14.7072 11.293C15.0977 11.6835 15.0977 12.3167 14.7072 12.7072L10.7072 16.7072L9.29297 15.293Z"
+            fill="#3F3F46"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function showConfirmation() {
+        var full = document.getElementsByClassName("full-100");
+        var containerConfirm =
+          document.getElementsByClassName("container-confirm");
+        var confirmElements = document.getElementsByClassName("confirm");
+
+        for (var i = 0; i < full.length; i++) {
+          full[i].style.setProperty("display", "block", "important");
+        }
+        for (var j = 0; j < containerConfirm.length; j++) {
+          containerConfirm[j].style.setProperty("display", "flex", "important");
+        }
+        for (var k = 0; k < confirmElements.length; k++) {
+          confirmElements[k].style.setProperty("display", "flex", "important");
+        }
+      }
+
+      function closeConfirmation() {
+        var full = document.getElementsByClassName("full-100");
+        var containerConfirm =
+          document.getElementsByClassName("container-confirm");
+        var confirmElements = document.getElementsByClassName("confirm");
+
+        for (var i = 0; i < full.length; i++) {
+          full[i].style.setProperty("display", "none", "important");
+        }
+        for (var j = 0; j < containerConfirm.length; j++) {
+          containerConfirm[j].style.setProperty("display", "none", "important");
+        }
+        for (var k = 0; k < confirmElements.length; k++) {
+          confirmElements[k].style.setProperty("display", "none", "important");
+        }
+      }
+    </script>
+  </body>
+</html>

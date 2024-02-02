@@ -1,0 +1,39 @@
+.with-border {
+  border-bottom: 1px solid black;
+}
+
+.container-fluid {
+  column-gap: 10rem;
+}
+
+nav {
+  margin-bottom: 1.5rem;
+}
+
+.nav-link.active {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 3px;
+  background-color: #000;
+  height: 2px;
+  transition: right 0.3s;
+}
+
+.nav-link.active:hover::after {
+  right: 0;
+}
+
+.custom-dropdown:hover {
+  color: #198754 !important;
+}
+
+li #logout {
+  color: red;
+}

@@ -1,0 +1,208 @@
+body {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  z-index: 1;
+}
+
+.back-course-svg {
+  margin-left: 5%;
+}
+
+.back-course-svg:hover {
+  background-color: #ececec;
+  cursor: pointer;
+}
+
+.container-ppt {
+  width: 65%;
+}
+
+.container-percentage {
+  display: flex;
+  margin: 3.5rem 0 0 16.9rem;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  width: 3%;
+  background-color: #ebebeb;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+#progressBar {
+  height: 5px;
+  background-color: #767676;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.back-materi-svg:hover,
+.next-materi-svg:hover {
+  background-color: #ececec;
+  cursor: pointer;
+}
+
+.back-materi-svg {
+  margin-left: 5%;
+}
+
+.active-materi {
+  color: #3f3f46;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.next-materi-svg {
+  margin-right: 5%;
+}
+
+#header,
+#footer {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+#header {
+  top: 0;
+}
+
+#footer {
+  bottom: 0;
+}
+
+/* PRE-TEST MATERI 2 */
+.btn-container {
+  text-align: end;
+}
+
+.mulai {
+  width: 95px;
+  height: 42px;
+  margin-right: 10rem;
+  background-color: #2d3e50 !important;
+  border-color: #2d3e50 !important;
+}
+
+.riwayat {
+  width: 94%;
+}
+
+table {
+  vertical-align: middle !important;
+  width: 100%;
+}
+
+th, td {
+  padding: 12px;
+}
+
+.tr-bottom {
+  border: 1px solid #dee2e6;
+  border-left: 0;
+  border-right: 0;
+}
+
+.thead-riwayat {
+  border: 1px solid #dee2e6;
+  border-right: 0;
+  border-left: 0;
+}
+
+.text-riwayat {
+  color: #71717a;
+}
+
+.hasil-riwayat {
+  font-size: 18px;
+}
+
+.status {
+  width: 51px;
+  height: 24px;
+  border: 2px solid #34d399;
+  border-radius: 4px;
+  background-color: #ecfdf5;
+  color: #059669;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#detail {
+  background-color: #f4f4f5;
+  border: 1px solid #d4d4d8;
+  width: 128px;
+  height: 42px;
+}
+
+.full-100 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1002;
+  background-color: #3d3d3d;
+  opacity: 0.5;
+  display: none;
+}
+
+.container-confirm {
+  display: none !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1005;
+}
+
+.confirm {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  height: 23%;
+  background-color: #fff !important;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 0.3rem;
+  margin-bottom: 7%;
+}
+
+@media (max-width: 500px) {
+  .judul {
+    font-size: 26px;
+  }
+  .container-ppt {
+    width: 90%;
+  }
+  .before-text {
+    display: none;
+  }
+  .active-materi {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+  }
+  .next-text {
+    display: none;
+  }
+  .container-percentage {
+    display: none;
+  }
+
+  /* PRE-TEST MATERI 2 */
+  .mulai {
+    margin-right: 0;
+  }
+  .confirm {
+    width: 80%;
+    height: 40%;
+  }
+}

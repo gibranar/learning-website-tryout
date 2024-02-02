@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../assets/icon/multimedia-computer.png" />
+    <link rel="stylesheet" href="../assets/style/navbar.css" />
+    <link rel="stylesheet" href="../assets/style/belajar.css" />
+
+    <!-- Bootstrap CSS -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Pembelajaran Multimedia</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light with-border">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">LOGO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Belajar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Hasil Belajar</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark fw-bold custom-dropdown"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Gibran Abyan Rifai
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Profil</a></li>
+                <li><a class="dropdown-item" href="#">Change Theme</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#" id="logout">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Materi 1</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            12 Prinsip Desain Multimedia
+          </h6>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at atque
+            nulla ipsum sit cum
+          </p>
+          <button class="mulai" onclick="window.location.href='materi/materi1.html'">
+            Mulai
+          </button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Materi 2</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Model Multimedia Interaktif
+          </h6>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at atque
+            nulla ipsum sit cum
+          </p>
+          <button class="mulai" onclick="window.location.href='materi/pre-test_materi2.html'">
+            Mulai
+          </button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Materi 3</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Elemen Penyusun Desain Multimedia
+          </h6>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at atque
+            nulla ipsum sit cum
+          </p>
+          <button class="mulai" onclick="window.location.href='#'">
+            Mulai
+          </button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Materi 4</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Desain Multimedia Yang Menarik
+          </h6>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at atque
+            nulla ipsum sit cum
+          </p>
+          <button class="mulai" onclick="window.location.href='#'">
+            Mulai
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script>
+    const logout = document.getElementById("logout");
+    logout.addEventListener("click", confirmLogout);
+
+    function confirmLogout() {
+      if (confirm("Anda yakin ingin keluar?") == true) {
+        alert("Anda berhasil keluar!");
+      }
+    }
+  </script>
+</html>
